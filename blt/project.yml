@@ -1,7 +1,7 @@
 project:
   machine_name: zugzug
-  prefix: BLT
-  human_name: 'BLTed 8'
+  prefix: ZZG
+  human_name: 'ZugZug'
   profile:
     name: lightning
   local:
