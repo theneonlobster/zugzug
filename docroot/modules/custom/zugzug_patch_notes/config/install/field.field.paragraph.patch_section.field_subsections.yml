@@ -1,0 +1,43 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subsections
+    - paragraphs.paragraphs_type.patch_section
+    - paragraphs.paragraphs_type.patch_subsection
+    - paragraphs.paragraphs_type.summary
+  module:
+    - entity_reference_revisions
+id: paragraph.patch_section.field_subsections
+field_name: field_subsections
+entity_type: paragraph
+bundle: patch_section
+label: Subsections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      summary: summary
+      patch_subsection: patch_subsection
+    target_bundles_drag_drop:
+      patch_section:
+        weight: 2
+        enabled: false
+      patch_notes:
+        weight: 4
+        enabled: false
+      summary:
+        enabled: true
+        weight: 6
+      patch_subsection:
+        enabled: true
+        weight: 6
+      custom_fields:
+        weight: 7
+        enabled: false
+field_type: entity_reference_revisions

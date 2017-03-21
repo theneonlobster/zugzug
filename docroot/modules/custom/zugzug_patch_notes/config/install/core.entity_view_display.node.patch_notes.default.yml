@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.patch_notes.field_namespace
     - field.field.node.patch_notes.field_sections
     - field.field.node.patch_notes.field_summary
-    - field.field.node.patch_notes.scheduled_update
     - image.style.thumbnail
     - node.type.patch_notes
   module:
@@ -96,5 +95,4 @@ content:
     weight: -20
     settings: {  }
     third_party_settings: {  }
-hidden:
-  scheduled_update: true
+hidden: {  }
