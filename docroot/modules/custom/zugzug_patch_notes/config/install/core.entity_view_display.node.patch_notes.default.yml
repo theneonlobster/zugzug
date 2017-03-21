@@ -1,0 +1,100 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.patch_notes.field_build_number
+    - field.field.node.patch_notes.field_build_type
+    - field.field.node.patch_notes.field_build_version
+    - field.field.node.patch_notes.field_custom_fields
+    - field.field.node.patch_notes.field_image
+    - field.field.node.patch_notes.field_namespace
+    - field.field.node.patch_notes.field_sections
+    - field.field.node.patch_notes.field_summary
+    - field.field.node.patch_notes.scheduled_update
+    - image.style.thumbnail
+    - node.type.patch_notes
+  module:
+    - entity_reference_revisions
+    - image
+    - options
+    - panelizer
+    - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+id: node.patch_notes.default
+targetEntityType: node
+bundle: patch_notes
+mode: default
+content:
+  field_build_number:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+  field_build_type:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_build_version:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_custom_fields:
+    type: entity_reference_revisions_entity_view
+    weight: 107
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_image:
+    weight: 108
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_namespace:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_sections:
+    type: entity_reference_revisions_entity_view
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_summary:
+    weight: 109
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+  workbench_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  scheduled_update: true

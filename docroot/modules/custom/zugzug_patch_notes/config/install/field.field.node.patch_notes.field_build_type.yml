@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_build_type
+    - node.type.patch_notes
+  module:
+    - options
+id: node.patch_notes.field_build_type
+field_name: field_build_type
+entity_type: node
+bundle: patch_notes
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

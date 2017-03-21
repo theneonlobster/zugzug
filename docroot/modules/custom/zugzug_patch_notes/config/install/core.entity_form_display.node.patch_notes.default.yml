@@ -1,0 +1,167 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.image_browser
+    - field.field.node.patch_notes.field_build_number
+    - field.field.node.patch_notes.field_build_type
+    - field.field.node.patch_notes.field_build_version
+    - field.field.node.patch_notes.field_custom_fields
+    - field.field.node.patch_notes.field_image
+    - field.field.node.patch_notes.field_namespace
+    - field.field.node.patch_notes.field_sections
+    - field.field.node.patch_notes.field_summary
+    - field.field.node.patch_notes.scheduled_update
+    - node.type.patch_notes
+  module:
+    - entity_browser
+    - field_group
+    - inline_entity_form
+    - paragraphs
+    - workbench_moderation
+third_party_settings:
+  field_group:
+    group_patch_notes:
+      children:
+        - group_details
+        - group_notes
+      parent_name: ''
+      weight: 5
+      format_type: tabs
+      format_settings:
+        id: ''
+        classes: ''
+        direction: horizontal
+      label: 'Patch notes'
+    group_details:
+      children:
+        - field_build_version
+        - field_build_number
+        - field_build_type
+      parent_name: group_patch_notes
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Details
+    group_notes:
+      children:
+        - field_sections
+      parent_name: group_patch_notes
+      weight: 11
+      format_type: tab
+      format_settings:
+        id: ''
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Notes
+id: node.patch_notes.default
+targetEntityType: node
+bundle: patch_notes
+mode: default
+content:
+  field_build_number:
+    weight: 12
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+  field_build_type:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_build_version:
+    weight: 11
+    settings:
+      size: 23
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_custom_fields:
+    type: entity_reference_paragraphs
+    weight: 7
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+  field_image:
+    type: entity_browser_file
+    weight: 6
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      selection_mode: selection_append
+    third_party_settings: {  }
+  field_namespace:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_sections:
+    type: entity_reference_paragraphs
+    weight: 5
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: patch_section
+    third_party_settings: {  }
+  field_summary:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 3
+    third_party_settings: {  }
+  scheduled_update:
+    type: inline_entity_form_complex
+    weight: 8
+    settings:
+      override_labels: true
+      label_singular: 'Scheduled update'
+      label_plural: 'Scheduled updates'
+      allow_new: true
+      match_operator: CONTAINS
+      allow_existing: false
+      form_mode: default
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true

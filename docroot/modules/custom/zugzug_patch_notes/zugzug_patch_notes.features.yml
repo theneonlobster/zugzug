@@ -1,0 +1,4 @@
+bundle: zugzug
+excluded:
+  - scheduled_updates.scheduled_update_type.node__status
+required: true
