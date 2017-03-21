@@ -10,7 +10,7 @@ dependencies:
     - field.field.node.patch_notes.field_image
     - field.field.node.patch_notes.field_namespace
     - field.field.node.patch_notes.field_sections
-    - field.field.node.patch_notes.scheduled_update
+    - field.field.node.patch_notes.field_summary
     - node.type.patch_notes
   module:
     - user
@@ -31,4 +31,4 @@ hidden:
   field_image: true
   field_namespace: true
   field_sections: true
-  scheduled_update: true
+  field_summary: true

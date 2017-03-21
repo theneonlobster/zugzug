@@ -11,12 +11,10 @@ dependencies:
     - field.field.node.patch_notes.field_namespace
     - field.field.node.patch_notes.field_sections
     - field.field.node.patch_notes.field_summary
-    - field.field.node.patch_notes.scheduled_update
     - node.type.patch_notes
   module:
     - entity_browser
     - field_group
-    - inline_entity_form
     - paragraphs
     - workbench_moderation
 third_party_settings:
@@ -135,18 +133,6 @@ content:
     settings:
       display_label: true
     weight: 3
-    third_party_settings: {  }
-  scheduled_update:
-    type: inline_entity_form_complex
-    weight: 8
-    settings:
-      override_labels: true
-      label_singular: 'Scheduled update'
-      label_plural: 'Scheduled updates'
-      allow_new: true
-      match_operator: CONTAINS
-      allow_existing: false
-      form_mode: default
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
