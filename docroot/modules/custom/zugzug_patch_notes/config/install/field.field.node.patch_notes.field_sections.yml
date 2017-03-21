@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.patch_notes
+    - paragraphs.paragraphs_type.patch_section
+  module:
+    - entity_reference_revisions
+id: node.patch_notes.field_sections
+field_name: field_sections
+entity_type: node
+bundle: patch_notes
+label: Sections
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      patch_section: patch_section
+    target_bundles_drag_drop:
+      patch_notes:
+        weight: 4
+        enabled: false
+      patch_section:
+        enabled: true
+        weight: 5
+      patch_subsection:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

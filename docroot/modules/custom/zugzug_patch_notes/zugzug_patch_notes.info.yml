@@ -1,0 +1,24 @@
+name: 'Patch Notes'
+description: 'Contains all the configuration related to Patch Notes'
+type: module
+core: 8.x
+dependencies:
+  - entity_browser
+  - entity_reference_revisions
+  - field
+  - field_group
+  - file
+  - image
+  - inline_entity_form
+  - lightning_media_image
+  - lightning_workflow
+  - menu_ui
+  - node
+  - options
+  - panelizer
+  - paragraphs
+  - scheduled_updates
+  - taxonomy
+  - user
+  - workbench_moderation
+package: ZugZug

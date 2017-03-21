@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.patch_notes.field_patch_note
+    - paragraphs.paragraphs_type.patch_notes
+id: paragraph.patch_notes.default
+targetEntityType: paragraph
+bundle: patch_notes
+mode: default
+content:
+  field_patch_note:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }
