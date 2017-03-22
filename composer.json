@@ -23,7 +23,9 @@
         "drupal/devel": "^1.0.0-alpha1",
         "drupal/ds": "^2.6",
         "drupal/bootstrap": "^3.2",
-        "drupal/environment_indicator": "^3.0"
+        "drupal/environment_indicator": "^3.0",
+        "drupal/auto_entitylabel": "^2.0@beta",
+        "drupal/restui": "^1.13"
     },
     "require-dev": {
         "behat/behat": "^3.1",
