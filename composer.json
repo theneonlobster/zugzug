@@ -20,7 +20,10 @@
         "drupal/admin_toolbar": "^1.18",
         "drupal/field_group": "^1.0@RC",
         "drupal/paragraphs": "^1.1",
-        "drupal/devel": "^1.0.0-alpha1"
+        "drupal/devel": "^1.0.0-alpha1",
+        "drupal/ds": "^2.6",
+        "drupal/bootstrap": "^3.2",
+        "drupal/environment_indicator": "^3.0"
     },
     "require-dev": {
         "behat/behat": "^3.1",
