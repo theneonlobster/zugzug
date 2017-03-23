@@ -11,6 +11,7 @@ git:
   default_branch: master
   remotes:
     -  'zugzug@svn-4053.devcloud.hosting.acquia.com:zugzug.git'
+    -  'git@github.com:theneonlobster/zugzug.git'
 drush:
   aliases:
     remote: '${project.machine_name}.test'
