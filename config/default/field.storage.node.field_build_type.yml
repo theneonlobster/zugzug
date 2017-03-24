@@ -1,0 +1,33 @@
+uuid: ca43354f-1b52-4edf-a357-56ac26f6a0ea
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_build_type
+field_name: field_build_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: retail
+      label: Retail
+    -
+      value: overview
+      label: Overview
+    -
+      value: beta
+      label: Beta
+    -
+      value: ptr
+      label: PTR
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

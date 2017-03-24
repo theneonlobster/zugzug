@@ -1,0 +1,7 @@
+uuid: fe8f35e8-114e-4e8d-bea4-8fa6a4bfb210
+langcode: en
+status: true
+dependencies: {  }
+id: patch_subsection
+label: 'DEPRECATED Patch subsection'
+behavior_plugins: {  }

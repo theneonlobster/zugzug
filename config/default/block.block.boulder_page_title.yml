@@ -1,0 +1,20 @@
+uuid: 5bdf7490-1658-4b84-8c39-72fc492f1b86
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boulder
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: boulder_page_title
+theme: boulder
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

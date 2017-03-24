@@ -1,0 +1,12 @@
+uuid: 10e63afa-6d9f-4285-bc13-a392a0241041
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_subsection
+id: paragraph.patch_subsection.default
+targetEntityType: paragraph
+bundle: patch_subsection
+mode: default
+content: {  }
+hidden: {  }

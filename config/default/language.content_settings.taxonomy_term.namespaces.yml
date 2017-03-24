@@ -1,0 +1,16 @@
+uuid: aced5034-bbd2-4dba-a3af-29a212416d80
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.namespaces
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: taxonomy_term.namespaces
+target_entity_type_id: taxonomy_term
+target_bundle: namespaces
+default_langcode: site_default
+language_alterable: false

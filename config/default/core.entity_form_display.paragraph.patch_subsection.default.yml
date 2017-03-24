@@ -1,0 +1,17 @@
+uuid: c7dc8727-b09f-4472-9dbf-584c4f848654
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_subsection
+  module:
+    - workbench_moderation
+id: paragraph.patch_subsection.default
+targetEntityType: paragraph
+bundle: patch_subsection
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

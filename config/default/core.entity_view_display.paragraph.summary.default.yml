@@ -1,0 +1,12 @@
+uuid: a4da3682-0f06-44f3-9f3c-3be90f3986f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.summary
+id: paragraph.summary.default
+targetEntityType: paragraph
+bundle: summary
+mode: default
+content: {  }
+hidden: {  }

@@ -1,0 +1,17 @@
+uuid: 0696a854-43a7-426c-8fd2-bee395abf4cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.summary
+  module:
+    - workbench_moderation
+id: paragraph.summary.default
+targetEntityType: paragraph
+bundle: summary
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

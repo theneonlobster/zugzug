@@ -1,0 +1,16 @@
+uuid: 8b670065-347b-4c82-8029-379d85558720
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_notes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+id: paragraph.patch_notes
+target_entity_type_id: paragraph
+target_bundle: patch_notes
+default_langcode: site_default
+language_alterable: false

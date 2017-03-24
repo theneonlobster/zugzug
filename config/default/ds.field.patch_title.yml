@@ -1,0 +1,11 @@
+id: patch_title
+label: 'Patch title'
+ui_limit: 'patch_notes|*'
+properties:
+  content:
+    value: '[node:field_build_version] [node:field_build_number]'
+    format: plain_text
+type: token
+type_label: 'Token field'
+entities:
+  node: node

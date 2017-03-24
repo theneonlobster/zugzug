@@ -1,0 +1,25 @@
+uuid: b33715ff-6964-41bd-8d46-c985960dce7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - workbench_moderation
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+  workbench_moderation:
+    enabled: true
+    allowed_moderation_states:
+      - published
+      - archived
+      - draft
+    default_moderation_state: draft
+name: 'Patch Notes'
+type: patch_notes
+description: 'A description of changes to a given version of software.  Generally used to track changes made to different game versions across all franchises'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

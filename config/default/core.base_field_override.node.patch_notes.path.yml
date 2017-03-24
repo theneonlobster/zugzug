@@ -1,0 +1,20 @@
+uuid: d8a8df4b-7c44-49bd-a226-83a0aae2b4e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.patch_notes
+  module:
+    - path
+id: node.patch_notes.path
+field_name: path
+entity_type: node
+bundle: patch_notes
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

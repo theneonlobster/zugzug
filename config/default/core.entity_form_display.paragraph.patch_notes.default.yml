@@ -1,0 +1,17 @@
+uuid: 1a516fc6-049f-4b64-86ae-c016be5decd6
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_notes
+  module:
+    - workbench_moderation
+id: paragraph.patch_notes.default
+targetEntityType: paragraph
+bundle: patch_notes
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true
+  uid: true

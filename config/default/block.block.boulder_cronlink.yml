@@ -1,0 +1,25 @@
+uuid: b0527f08-0ea4-471e-82c2-6e08e82c9a14
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:69412048-6202-46c4-a7ff-03b250b741b4'
+  module:
+    - block_content
+  theme:
+    - boulder
+id: boulder_cronlink
+theme: boulder
+region: highlighted
+weight: 0
+provider: null
+plugin: 'block_content:69412048-6202-46c4-a7ff-03b250b741b4'
+settings:
+  id: 'block_content:69412048-6202-46c4-a7ff-03b250b741b4'
+  label: 'Cron link'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

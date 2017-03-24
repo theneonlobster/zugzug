@@ -1,0 +1,29 @@
+uuid: f0782bd2-f447-4385-a6bc-db8bd2f25093
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.patch_section.field_notes
+    - field.field.paragraph.patch_section.field_title
+    - paragraphs.paragraphs_type.patch_section
+  module:
+    - text
+id: paragraph.patch_section.default
+targetEntityType: paragraph
+bundle: patch_section
+mode: default
+content:
+  field_notes:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

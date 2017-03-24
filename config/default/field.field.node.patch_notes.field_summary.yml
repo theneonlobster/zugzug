@@ -1,0 +1,19 @@
+uuid: 0956e33e-98bd-45f9-b9c3-4f33126f4659
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.patch_notes
+id: node.patch_notes.field_summary
+field_name: field_summary
+entity_type: node
+bundle: patch_notes
+label: Summary
+description: 'A general overview of what the patch contains.  Generally a one or two sentences describing the changes.  Simple descriptions like "Legion Pre-Patch" and "New Hero - Ragnaros" are welcome.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

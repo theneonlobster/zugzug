@@ -1,0 +1,20 @@
+uuid: 9c6c00d7-a744-4bd6-8e34-31e0764fed3e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boulder
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: boulder_local_actions
+theme: boulder
+region: content
+weight: -7
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 221cbcc3-879a-4b52-91ae-175bf2f78104
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_notes
+id: paragraph.patch_notes.status
+field_name: status
+entity_type: paragraph
+bundle: patch_notes
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

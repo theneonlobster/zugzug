@@ -1,0 +1,28 @@
+uuid: 7dd14578-9a44-4be0-960f-b8b81cc94648
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_namespace
+    - node.type.patch_notes
+    - taxonomy.vocabulary.namespaces
+id: node.patch_notes.field_namespace
+field_name: field_namespace
+entity_type: node
+bundle: patch_notes
+label: Namespace
+description: 'The section where this patch note belongs.  Generally segmented by game franchise (ex: Heroes, Overwatch, etc.)'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      namespaces: namespaces
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

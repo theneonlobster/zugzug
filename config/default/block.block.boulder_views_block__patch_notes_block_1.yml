@@ -1,0 +1,30 @@
+uuid: e3cd25d9-a664-463b-93ec-cb1d2776f5a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.patch_notes
+  module:
+    - system
+    - views
+  theme:
+    - boulder
+id: boulder_views_block__patch_notes_block_1
+theme: boulder
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:patch_notes-block_1'
+settings:
+  id: 'views_block:patch_notes-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/add/patch_notes\r\n/node/*/edit\r\n/node/*"
+    negate: false
+    context_mapping: {  }

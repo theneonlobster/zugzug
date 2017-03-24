@@ -1,0 +1,22 @@
+uuid: d20a169b-3d6f-4185-a628-c61ab545f9fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boulder
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: boulder_local_tasks
+theme: boulder
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

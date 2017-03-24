@@ -1,0 +1,22 @@
+uuid: d37666ee-86e3-4462-aef0-c5fbc18a4ea4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - boulder
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: boulder_content
+theme: boulder
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

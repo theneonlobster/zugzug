@@ -1,0 +1,42 @@
+uuid: 635cf2c0-a1ed-47b4-ba61-02d42d47bf6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_custom_fields
+    - node.type.patch_notes
+    - paragraphs.paragraphs_type.custom_fields
+  module:
+    - entity_reference_revisions
+id: node.patch_notes.field_custom_fields
+field_name: field_custom_fields
+entity_type: node
+bundle: patch_notes
+label: 'Custom fields'
+description: 'Arbitrary key/value pairs attached to the given patch note.  These values would be interpreted and acted upon by the client in some fashion.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      custom_fields: custom_fields
+    target_bundles_drag_drop:
+      custom_fields:
+        enabled: true
+        weight: 5
+      patch_notes:
+        weight: 6
+        enabled: false
+      patch_section:
+        weight: 7
+        enabled: false
+      patch_subsection:
+        weight: 8
+        enabled: false
+      summary:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

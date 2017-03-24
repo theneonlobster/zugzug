@@ -1,0 +1,22 @@
+uuid: 3e8494dc-a019-4c61-af9f-2a97bb00b2fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.patch_notes
+id: node.patch_notes.sticky
+field_name: sticky
+entity_type: node
+bundle: patch_notes
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

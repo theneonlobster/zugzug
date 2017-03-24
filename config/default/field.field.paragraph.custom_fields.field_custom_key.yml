@@ -1,0 +1,19 @@
+uuid: 82c578b4-6474-4593-bf0e-f10be68b9e24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_custom_key
+    - paragraphs.paragraphs_type.custom_fields
+id: paragraph.custom_fields.field_custom_key
+field_name: field_custom_key
+entity_type: paragraph
+bundle: custom_fields
+label: Key
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

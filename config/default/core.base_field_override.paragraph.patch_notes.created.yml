@@ -1,0 +1,18 @@
+uuid: d570a6e4-fba4-4ec7-b4cc-6356348f97ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_notes
+id: paragraph.patch_notes.created
+field_name: created
+entity_type: paragraph
+bundle: patch_notes
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

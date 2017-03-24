@@ -1,0 +1,7 @@
+uuid: ce7bf1cc-55e3-470c-b982-9b7adec482c2
+langcode: en
+status: true
+dependencies: {  }
+id: patch_notes
+label: 'DEPRECATED Patch notes'
+behavior_plugins: {  }

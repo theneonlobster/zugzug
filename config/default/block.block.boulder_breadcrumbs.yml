@@ -1,0 +1,22 @@
+uuid: 1b1c53bb-56c9-450f-98ed-4ae1f3e63ddd
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - boulder
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: boulder_breadcrumbs
+theme: boulder
+region: '-1'
+weight: -7
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

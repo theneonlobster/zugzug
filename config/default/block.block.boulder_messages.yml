@@ -1,0 +1,22 @@
+uuid: 2471649d-ef29-41f3-a907-1d991dcdf36d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - boulder
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: boulder_messages
+theme: boulder
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

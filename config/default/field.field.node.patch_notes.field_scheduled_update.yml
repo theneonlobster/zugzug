@@ -1,0 +1,28 @@
+uuid: ec8153bf-1340-4f59-9baf-f591c03b6dfa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_scheduled_update
+    - node.type.patch_notes
+    - scheduled_updates.scheduled_update_type.node_embargo
+id: node.patch_notes.field_scheduled_update
+field_name: field_scheduled_update
+entity_type: node
+bundle: patch_notes
+label: 'Scheduled update'
+description: 'This section allows you to schedule updates to the Patch Note''s status.  You''ll be able to enter the time when the status should change (will be somewhat affected by the cron timer for Drupal) and what the status should change to.  The common operations here will be scheduling transition of Draft -> Published and Published -> Archived.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:scheduled_update'
+  handler_settings:
+    target_bundles:
+      node_embargo: node_embargo
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

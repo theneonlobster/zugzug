@@ -1,0 +1,36 @@
+uuid: 08bfb5f7-e054-4221-9fde-a414303b76ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.patch_notes.field_build_number
+    - field.field.node.patch_notes.field_build_type
+    - field.field.node.patch_notes.field_build_version
+    - field.field.node.patch_notes.field_custom_fields
+    - field.field.node.patch_notes.field_namespace
+    - field.field.node.patch_notes.field_scheduled_update
+    - field.field.node.patch_notes.field_sections
+    - field.field.node.patch_notes.field_summary
+    - node.type.patch_notes
+  module:
+    - user
+id: node.patch_notes.teaser
+targetEntityType: node
+bundle: patch_notes
+mode: teaser
+content:
+  links:
+    weight: 100
+  workbench_moderation_control:
+    weight: -20
+hidden:
+  field_build_number: true
+  field_build_type: true
+  field_build_version: true
+  field_custom_fields: true
+  field_namespace: true
+  field_scheduled_update: true
+  field_sections: true
+  field_summary: true
+  langcode: true

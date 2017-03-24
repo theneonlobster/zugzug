@@ -1,0 +1,19 @@
+uuid: f005eb6b-4b77-4ddf-bd89-27d717a82eb8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.patch_section
+id: paragraph.patch_section.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: patch_section
+label: Title
+description: 'A title heading for the patch note section'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

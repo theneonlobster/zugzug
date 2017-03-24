@@ -1,0 +1,20 @@
+uuid: 7ef9bc68-7c47-4343-b3e5-23a733db21ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.namespaces
+  module:
+    - path
+id: taxonomy_term.namespaces.path
+field_name: path
+entity_type: taxonomy_term
+bundle: namespaces
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,29 @@
+uuid: 391d82f0-c440-41df-a509-b219efa0039e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  0: 'access content'
+  1: 'access site-wide contact form'
+  2: 'view media'
+  3: 'create patch_notes content'
+  4: 'edit any patch_notes content'
+  5: 'view patch_notes revisions'
+  6: 'view any unpublished content'
+  7: 'view moderation states'
+  8: 'view latest version'
+  9: 'use draft_draft transition'
+  10: 'use published_draft transition'
+  13: 'use text format simple_html'
+  14: 'view the administration theme'
+  15: 'create node_embargo scheduled updates'
+  16: 'edit any node_embargo scheduled updates'
+  17: 'edit own node_embargo scheduled updates'
+  19: 'use published_published transition'
+  20: 'use draft_published transition'

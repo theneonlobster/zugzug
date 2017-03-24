@@ -1,0 +1,21 @@
+uuid: 215434f2-448f-4be2-962b-b525a98c63af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_notes
+    - paragraphs.paragraphs_type.patch_section
+  module:
+    - text
+id: paragraph.patch_section.field_notes
+field_name: field_notes
+entity_type: paragraph
+bundle: patch_section
+label: Notes
+description: 'The actual Patch Notes content.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

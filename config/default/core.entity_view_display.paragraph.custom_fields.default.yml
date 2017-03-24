@@ -1,0 +1,28 @@
+uuid: 3fd63a5c-61b3-4e93-8b39-d1ba96684a04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_fields.field_custom_key
+    - field.field.paragraph.custom_fields.field_custom_value
+    - paragraphs.paragraphs_type.custom_fields
+id: paragraph.custom_fields.default
+targetEntityType: paragraph
+bundle: custom_fields
+mode: default
+content:
+  field_custom_key:
+    weight: 0
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_custom_value:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }

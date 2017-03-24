@@ -1,0 +1,7 @@
+uuid: f75531bc-5278-4b89-a8de-a743fe82e837
+langcode: en
+status: true
+dependencies: {  }
+id: patch_section
+label: 'Patch section'
+behavior_plugins: {  }

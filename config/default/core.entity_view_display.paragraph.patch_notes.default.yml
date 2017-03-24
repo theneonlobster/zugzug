@@ -1,0 +1,12 @@
+uuid: 482fb678-cdab-44a4-9b0d-0187a4202860
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_notes
+id: paragraph.patch_notes.default
+targetEntityType: paragraph
+bundle: patch_notes
+mode: default
+content: {  }
+hidden: {  }

@@ -1,0 +1,33 @@
+uuid: 4e653b94-942a-4510-aa15-fccde8fd0a5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.custom_fields.field_custom_key
+    - field.field.paragraph.custom_fields.field_custom_value
+    - paragraphs.paragraphs_type.custom_fields
+  module:
+    - workbench_moderation
+id: paragraph.custom_fields.default
+targetEntityType: paragraph
+bundle: custom_fields
+mode: default
+content:
+  field_custom_key:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_custom_value:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

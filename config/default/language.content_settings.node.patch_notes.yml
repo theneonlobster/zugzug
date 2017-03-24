@@ -1,0 +1,16 @@
+uuid: 0dc3b1a7-f3b0-4cdb-95e1-1ded39432103
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.patch_notes
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.patch_notes
+target_entity_type_id: node
+target_bundle: patch_notes
+default_langcode: site_default
+language_alterable: true

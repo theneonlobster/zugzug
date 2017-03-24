@@ -1,0 +1,21 @@
+uuid: 44d181e3-a366-4131-b1f3-5c95749e20af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_build_type
+    - node.type.patch_notes
+  module:
+    - options
+id: node.patch_notes.field_build_type
+field_name: field_build_type
+entity_type: node
+bundle: patch_notes
+label: Type
+description: "A general type associated with a Patch Notes instance.  There is no guarantee how these will be interpreted, but rough guidelines are provided below\r\n<ul>\r\n  <li>OVERVIEW: A brief overview of changes attached to a minor version. </li>\r\n  <li>RETAIL: Should be your most commonly used type.  Represents patch notes distributed to the public retail version of the product. </li>\r\n  <li>PTR: Patch notes associated with a version deployed on the Public Test Realm </li>\r\n  <li>BETA: Not commonly used.  Unsure why this exists. </li>\r\n</ul>"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

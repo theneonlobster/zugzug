@@ -1,0 +1,18 @@
+uuid: 3532882d-4272-4b72-90f0-770d652cc396
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.patch_subsection
+id: paragraph.patch_subsection.created
+field_name: created
+entity_type: paragraph
+bundle: patch_subsection
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
