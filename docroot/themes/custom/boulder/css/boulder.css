@@ -1,0 +1,59 @@
+body {
+  background: none;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.field--type-string.field--name-field-custom-key,
+.field--type-string.field--name-field-custom-value {
+  margin-bottom: 0;
+}
+
+table > tbody > tr > td > div > div[id^=edit-field-custom-fields-].form-wrapper.js-form-wrapper,
+table > tbody > tr > td > div.ajax-new-content > div > div[id^=edit-field-custom-fields-].form-wrapper.js-form-wrapper {
+  display: flex;
+  margin-bottom: 0;
+}
+
+table > tbody > tr > td > div > div[id^=edit-field-custom-fields-] .form-wrapper,
+table > tbody > tr > td > div.ajax-new-content > div > div[id^=edit-field-custom-fields-] .form-wrapper {
+  margin-bottom: 0;
+}
+
+table > tbody > tr > td > div > div[id^=edit-field-custom-fields-] > .paragraph-type-top,
+table > tbody > tr > td > div.ajax-new-content > div > div[id^=edit-field-custom-fields-] > .paragraph-type-top {
+  order: 2;
+}
+
+table > tbody > tr > td > div > div[id^=edit-field-custom-fields-] > .paragraphs-subform > .field--type-string,
+table > tbody > tr > td > div.ajax-new-content > div > div[id^=edit-field-custom-fields-] > .paragraphs-subform > .field--type-string {
+  display: inline-block;
+  width: 30%;
+}
+
+.paragraph-type-title {
+  display: none;
+}
+
+#block-boulder-content > div > div > div > div.field.field--name-field-summary.field--type-string-long {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 1em;
+}
+
+#block-boulder-content > div > div > div > div.field.field--name-dynamic-token-fieldnode-patch-title.field--type-ds.field--label-hidden.field__item {
+  position: absolute;
+  top: 5em;
+  right: 1em;
+}
+
+#block-boulder-content > div > div > div > div.field.field--name-field-sections.field--type-entity-reference-revisions.field--label-visually_hidden > div.field__items > div > div > div.field.field--name-field-title.field--type-string.field--label-above .field__label,
+#block-boulder-content > div > div > div > div.field.field--name-field-sections.field--type-entity-reference-revisions.field--label-visually_hidden > div.field__items > div > div > div.field.field--name-field-notes.field--type-text-long.field--label-above .field__label {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+#block-boulder-content > div > div > div > div.field.field--name-field-sections.field--type-entity-reference-revisions.field--label-visually_hidden > div.field__items > div {
+  padding: 1em;
+  background-color: rgba(0, 0, 0, 0.02);
+  margin: 2em 0;
+}

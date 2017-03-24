@@ -15,7 +15,7 @@ name: Boulder
 type: theme
 base theme: bartik
 description: 'Based on Bartik.'
-package: Custom
+package: custom
 version: 8.x-1.0
 core: 8.x
 regions:
@@ -38,3 +38,6 @@ regions:
   footer_third: 'Footer third'
   footer_fourth: 'Footer fourth'
   footer_fifth: 'Footer fifth'
+
+libraries:
+  - boulder/base
